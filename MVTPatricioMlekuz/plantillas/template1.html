@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+</head>
+<body>
+    <h1 style="color:red">Familia fue guardada con exito!</h1> 
+    <ul>
+        <h4>Familia nro 1</h4> 
+        <li>Familia: {{nombre}}</li>
+        <li>Apellido: {{apellido}}</li>
+        <li>edad: {{edad}}</li>
+        <li>fecha de nacimiento: {{ fechanac }}</li>
+        <h4>Familia nro 2</h4>  
+        <li>Familia: {{nombre_1}}</li>
+        <li>Apellido: {{apellido_1}}</li>
+        <li>edad: {{edad_1}}</li>
+        <li>fecha de nacimiento: {{ fechanac_1 }}</li>
+        <h4>Familia nro 3</h4> 
+        <li>Familia: {{nombre_2}}</li>
+        <li>Apellido: {{apellido_2}}</li>
+        <li>edad: {{edad_2}}</li>
+        <li>fecha de nacimiento: {{ fechanac_2 }}</li>
+    </ul>
+    <h2>lista nombres</h2>
+    <ul>
+    {% for n in listanombres %}
+      
+        <li>Nombre de los integrantes de la familia: {{ n }}</li>
+    
+    {% endfor %}
+    </ul>
+    <h2>lista apellidos</h2>
+    <ul>
+    {% for n in listaapellidos %}
+          
+        <li>apellido de los integrantes de la familia: {{ n }}</li>
+        
+    {% endfor %}
+        </ul>
+    <h2>lista edades</h2>
+        <ul>
+    {% for n in listaedades %}
+              
+        <li>edad de los integrantes de la familia: {{ n }}</li>
+            
+    {% endfor %}
+            </ul>
+    <h2>lista fechas de nacimiento</h2>
+        <ul>
+    {% for n in listanac %}
+              
+        <li>fecha de nacimiento de los integrantes de la familia: {{ n }}</li>
+            
+    {% endfor %}
+            </ul>    
+
+
+
+
+
+
+
+
+        </body>
+</html>
